@@ -21,6 +21,10 @@ const theme = {
         successColor: '#148914',
         hyperlinkColor: '#0358FD'
     },
+    gradients: {
+        purpleGradient: ['#712CA4', '#BC35CB'],
+        greyGradient: ['#5D5D5D', '#CECECE']
+    },
     fonts: {
         main: 'Poppins-Regular'
     },
