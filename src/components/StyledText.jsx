@@ -4,7 +4,7 @@ import theme from '../theme.js'
 
 const styles = StyleSheet.create({
     text: {
-        color: theme.colors.backgroundDarkBrilliantWhite,
+        color: theme.colors.backgroundDarkLightGrey,
         fontSize: theme.fontSizes.body,
         fontFamily: 'Poppins-Regular',
         fontWeight: theme.fontWeights.normal
@@ -41,21 +41,28 @@ const styles = StyleSheet.create({
     },
     textAlignCenter: {
         textAlign: 'center'
+    },
+    textPadding: {
+        paddingTop: 10,
     }
 })
 
-export default function StyledText ({ align, font, colorPrimaryDark, colorPrimaryLight, largeTitle, secondaryText, children, color, fontSize, fontWeight, style, ...restOfProps }) {
+export default function StyledText ({ align, font, colorPrimaryDark, colorPrimaryLight, colorSecondaryDark, colorSecondaryLight,
+     largeTitle, secondaryText, children, color, fontSize, fontWeight, textPadding, style, ...restOfProps }) {
     const textStyles = [
       styles.text,
       align === 'center' && styles.textAlignCenter,
       font === 'font' && styles.fontFamily,
       colorPrimaryDark === 'primaryDark' && styles.colorPrimaryDark,
       colorPrimaryLight === 'primaryLight' && styles.colorPrimaryLight,
+      colorSecondaryDark == 'secondaryDark' && styles.colorSecondaryDark,
+      colorSecondaryLight == 'secondaryLight' && styles.colorSecondaryLight,
       color === 'secondary' && styles.colorSecondary,
       fontSize === 'heading' && styles.heading,
       fontWeight === 'bold' && styles.bold,
       fontSize === 'largeTitle' && styles.largeTitle,
-      fontSize === "secondaryText" && styles.secondaryText,
+      fontSize === 'secondaryText' && styles.secondaryText,
+      textPadding === 'textPadding' && styles.textPadding,
       style
     ]
   
