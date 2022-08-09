@@ -3,8 +3,9 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import theme from '../theme.js'
 
-import HomeScreen from '../components/Main';
+import IntroductionToGroundingExercise from '../components/Main';
 import GroundingExercise from '../screens/parentGroundingExercises/GroundingExerciseScreen'
+import ParentOnBoarding from '../screens/ParentOnboarding/ParentOnboarding';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,7 +16,8 @@ const RootNavigator = () => {
         headerTitleAlign: 'center', 
         headerTitleStyle:{fontFamily: theme.fonts.main, fontSize: theme.fontSizes.secondaryText, color: theme.colors.backgroundDarkBrilliantWhite},
         headerTintColor: theme.colors.backgroundDarkBrilliantWhite}}>
-        <Stack.Screen name="Home" component={HomeScreen} options={{headerShown: false}}/>
+        <Stack.Screen name="Home" component={ParentOnBoarding} options={{headerShown: false}}/>
+        <Stack.Screen name="IntroductionToGroundingExercise" component={IntroductionToGroundingExercise} options={{headerShown: false}}/>
         <Stack.Screen name="GroundingExercise" component={GroundingExercise} options={{title: 'Grounding Exercise'}}/>
       </Stack.Navigator>
     </NavigationContainer>

@@ -44,11 +44,22 @@ const styles = StyleSheet.create({
     },
     textPadding: {
         paddingTop: 10,
-    }
+    },
+    welcomeTextParentOnboardingMargin: {
+        marginTop: -20,
+    },
+    textPaddingParentOnboarding: {
+        paddingTop: 200,
+    },
+    secondarytextPaddingParentOnboarding: {
+        paddingTop: 10,
+        paddingBottom: 100,
+    },
 })
 
 export default function StyledText ({ align, font, colorPrimaryDark, colorPrimaryLight, colorSecondaryDark, colorSecondaryLight,
-     largeTitle, secondaryText, children, color, fontSize, fontWeight, textPadding, style, ...restOfProps }) {
+     largeTitle, secondaryText, children, color, fontSize, fontWeight, textPadding, welcomeTextParentOnboardingMargin,
+     textPaddingParentOnboarding, secondarytextPaddingParentOnboarding, style, ...restOfProps }) {
     const textStyles = [
       styles.text,
       align === 'center' && styles.textAlignCenter,
@@ -63,6 +74,9 @@ export default function StyledText ({ align, font, colorPrimaryDark, colorPrimar
       fontSize === 'largeTitle' && styles.largeTitle,
       fontSize === 'secondaryText' && styles.secondaryText,
       textPadding === 'textPadding' && styles.textPadding,
+      welcomeTextParentOnboardingMargin === 'welcomeTextParentOnboardingMargin' && styles.welcomeTextParentOnboardingMargin,
+      textPaddingParentOnboarding === 'textPaddingParentOnboarding' && styles.textPaddingParentOnboarding,
+      secondarytextPaddingParentOnboarding === 'secondarytextPaddingParentOnboarding' && styles.secondarytextPaddingParentOnboarding,
       style
     ]
   
