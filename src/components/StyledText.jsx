@@ -42,6 +42,9 @@ const styles = StyleSheet.create({
     textAlignCenter: {
         textAlign: 'center'
     },
+    textAlignLeft: {
+        textAlign: 'left'
+    },
     textPadding: {
         paddingTop: 10,
     }
@@ -52,6 +55,7 @@ export default function StyledText ({ align, font, colorPrimaryDark, colorPrimar
     const textStyles = [
       styles.text,
       align === 'center' && styles.textAlignCenter,
+      align === 'left' && styles.textAlignLeft,
       font === 'font' && styles.fontFamily,
       colorPrimaryDark === 'primaryDark' && styles.colorPrimaryDark,
       colorPrimaryLight === 'primaryLight' && styles.colorPrimaryLight,
