@@ -10,7 +10,7 @@ const ImageScreen = ({imageToLoad, backgroundToLoad, title, description, buttonT
             {imageToLoad === 'SaferPlaceLogo' ? <Image style={styles.saferPlaceLogo} source={require('../../assets/ParentOnboarding/Safer-Place-Logo.png')}/>:null}
             <View>
                 <StyledText fontSize='largeTitle' colorPrimaryDark='primaryDark' align='center' font='font' textPaddingParentOnboarding='textPaddingParentOnboarding'>{title}</StyledText>
-                <StyledText fontSize='secondaryText' colorSecondaryDark='secondaryDark' align='center' font='font' secondarytextPaddingParentOnboarding='secondarytextPaddingParentOnboarding'>
+                <StyledText fontSize='secondaryText' colorSecondaryDark='secondaryDark' align='center' font='font'>
                 {description}</StyledText>
             </View>
             {buttonTitle ? <Button
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         width: 400,
         height: 150,
         resizeMode: 'contain',
-        top: 60
+        // top: 100
     }
 })
 
