@@ -6,15 +6,16 @@ const description = `A simple introduction to how
 exercises will work, and an 
 invitation to try one themselves.`
 
-const GroundingExercisePage = ({navigation}) => {
+const IntroductionExercises = ({navigation}) => {
     return (
         <View style={styles.container}>
-            <ImageScreen imageToLoad={'Tree1'} 
+            <ImageScreen imageToLoad={'mushroom'} 
             backgroundToLoad={'gardenBg1'} 
-            title={'Grounding Exercise'} 
+            title={'Exercises'} 
             description={description} 
-            buttonTitle={"LET'S START"} 
+            buttonTitle={"CONTINUE"} 
             navigation={navigation}
+            route={'GroundingExercise'}
             />
         </View>
     )
@@ -28,4 +29,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default GroundingExercisePage;
+export default IntroductionExercises;

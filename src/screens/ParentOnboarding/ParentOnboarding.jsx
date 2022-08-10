@@ -45,7 +45,15 @@ const ParentOnBoardingPage = ({ navigation }) => {
       }
     return (
         <View style={styles.container} onLayout={onLayoutRootView}>
-            <ImageScreen imageToLoad={'SaferPlaceLogo'} backgroundToLoad={'calmBackground'} welcomeText={'WELCOME \n TO A'} title={'Snappy Title here'} description={description} buttonTitle={"GET STARTED"} navigation={navigation}/>
+            <ImageScreen 
+              imageToLoad={'SaferPlaceLogo'} 
+              backgroundToLoad={'calmBackground'} 
+              welcomeText={'WELCOME \n TO A'} 
+              title={'Snappy Title here'} 
+              description={description} 
+              buttonTitle={"GET STARTED"} 
+              navigation={navigation} 
+              route={'IntroductionToGroundingExercise'}/>
         </View>
     )
 }

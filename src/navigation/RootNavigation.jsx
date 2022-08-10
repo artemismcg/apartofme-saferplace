@@ -3,8 +3,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import theme from '../theme.js'
 
-import IntroductionToGroundingExercise from '../components/Main';
-import GroundingExercise from '../screens/parentGroundingExercises/GroundingExerciseScreen'
+import IntroductionToGroundingExercise from '../screens/ParentOnboarding/IntroductionExercises';
+import GroundingExercise from '../screens/parentGroundingExercises/GroundingExerciseScreen';
 import ParentOnBoarding from '../screens/ParentOnboarding/ParentOnboarding';
 
 const Stack = createNativeStackNavigator();
