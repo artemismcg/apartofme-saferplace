@@ -3,13 +3,17 @@ import { View, StyleSheet, Alert, TouchableOpacity } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient';
 import StyledText from './StyledText.jsx'
 import theme from '../theme.js'
+import routes from '../route'
 
+function getRoute(route){
+    return routes.find((r) => r.route === route)
+}
 
-const Button = ({title, navigation}) => (
+const Button = ({title, navigation, route}) => (
     <View>
         <LinearGradient start={styles.linearGradient.startPos} end={styles.linearGradient.endPos} colors={theme.gradients.purpleGradient} 
         style={title === 'CONTINUE' ? styles.linearGradient : styles.startButton}>
-        <TouchableOpacity onPress={() => navigation.navigate('GroundingExercise')}>
+        <TouchableOpacity onPress={() => navigation.navigate(getRoute(route).route)}>
             <StyledText align='center' colorPrimaryDark='primaryDark' font='font' fontSize='heading'>{title}</StyledText>
         </TouchableOpacity>
         </LinearGradient>

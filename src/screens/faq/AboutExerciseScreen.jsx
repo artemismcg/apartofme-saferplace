@@ -7,7 +7,7 @@ import StyledText from './StyledText.jsx'
 const AboutExerciseScreen = ({navigation}) => {
     return (
         <View style={styles.container}>
-            <FaqGallery backgroundToLoad={'gardenBg1'} title={'About'} description={'FAQS and tips about this activity'}/>
+            <FaqGallery backgroundToLoad={'aboutGroundingExercise'} title={'About'} description={'FAQS and tips about this activity'}/>
         </View>
     )
 }
