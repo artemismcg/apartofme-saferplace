@@ -7,7 +7,7 @@ import StyledText from './StyledText.jsx'
 const FaqGallery = ({navigation, backgroundToLoad, title, description, questions, responses}) => {
     return (
         <View style={styles.container}>
-            {backgroundToLoad === 'gardenBg1' ? <ImageBackground source={(require('../../assets/Garden_bg1.png'))} style={styles.background}>
+            {backgroundToLoad === 'aboutGroundingExercise' ? <ImageBackground source={(require('../../assets/AboutGroundingExercise.png'))} style={styles.background}>
                 <View>
                     <StyledText fontSize='largeTitle' colorPrimaryDark='primaryDark' align='center' font='font' style={styles.title}>{title}</StyledText>
                     <StyledText fontSize='secondaryText' colorSecondaryDark='secondaryDark' align='center' font='font' textPadding='textPadding'>{description}</StyledText>
