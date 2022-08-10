@@ -3,7 +3,7 @@ import { View, StyleSheet, Alert, TouchableOpacity } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient';
 import StyledText from './StyledText.jsx'
 import theme from '../theme.js'
-import routes from '../route'
+import routes from '../data/route'
 
 function getRoute(route){
     return routes.find((r) => r.route === route)

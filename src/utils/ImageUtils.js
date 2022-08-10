@@ -1,7 +1,6 @@
 import backgrounds from '../data/ImagesData'
-
-export default {
+export default imageUtils = {
     getBg: (bgName) =>{
         return backgrounds.find((background) => background.bg === bgName)
-    }
+    }   
 }
