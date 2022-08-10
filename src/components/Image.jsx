@@ -3,6 +3,15 @@ import { Image, View, StyleSheet, ImageBackground, Alert } from 'react-native'
 import StyledText from './StyledText.jsx'
 import Button from './Button.jsx'
 
+const backgrounds = [
+    {bg: 'calmBackground', src:(require('../../assets/ParentOnboarding/calm-background.png'))},
+    {bg: 'gardenBg1', src:(require('../../assets/Garden_bg1.png'))}
+]
+
+function getBg (bgName){
+    return backgrounds.find((background) => background.bg === bgName)
+}
+
 const ImageScreen = ({imageToLoad, backgroundToLoad, title, description, buttonTitle, navigation, welcomeText, route}) => (
     <View style={styles.container}>
         <ImageBackground source = {getBg(backgroundToLoad).src} style={styles.background}>
