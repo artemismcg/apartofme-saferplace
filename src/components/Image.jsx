@@ -2,11 +2,9 @@ import React from 'react'
 import { Image, View, StyleSheet, ImageBackground, Alert } from 'react-native'
 import StyledText from './StyledText.jsx'
 import Button from './Button.jsx'
-import ImageUtils from '../utils/ImageUtils'
 
 const ImageScreen = ({imageToLoad, backgroundToLoad, title, description, buttonTitle, navigation, welcomeText, route}) => (
     <View style={styles.container}>
-        <ImageBackground source = {ImageUtils.getBg(backgroundToLoad).src} style={styles.background}>
         <StyledText fontSize='secondaryText' colorPrimaryDark='primaryDark' align='center' font='font' welcomeTextParentOnboardingMargin='welcomeTextParentOnboardingMargin'>{welcomeText}</StyledText>
             {imageToLoad === 'SaferPlaceLogo' ? <Image style={styles.saferPlaceLogo} source={require('../../assets/ParentOnboarding/Safer-Place-Logo.png')}/>:null}
             {imageToLoad === 'mushroom' ? <Image style={styles.mushRoomImage} source={require('../../assets/Mushroom.png')}/>:null}
@@ -21,7 +19,6 @@ const ImageScreen = ({imageToLoad, backgroundToLoad, title, description, buttonT
                 navigation={navigation}
                 route={route}
             />:null}
-        </ImageBackground>
     </View>
 )
 
@@ -39,13 +36,13 @@ const styles = StyleSheet.create({
     mushRoomImage: {
         width: 406,
         height: 330,
-        marginBottom: -35
+        marginBottom: -135
     },
     treeImage: {
         width: 406,
         height: 460,
-        top: -70,
-        marginBottom: -135
+        top: -140,
+        marginBottom: -220
     },
     saferPlaceLogo: {
         width: 400,

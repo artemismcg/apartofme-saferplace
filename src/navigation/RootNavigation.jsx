@@ -3,10 +3,11 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import theme from '../theme.js'
 
-import IntroductionToGroundingExercise from '../screens/parentGroundingExercises/IntroductionExercises';
+import IntroductionToGroundingExercise from '../screens/ParentOnboarding/IntroductionExercises';
 import GroundingExercise from '../screens/parentGroundingExercises/GroundingExerciseScreen';
 import ParentOnBoarding from '../screens/ParentOnboarding/ParentOnboarding';
 import UserSelection from '../screens/ParentOnboarding/UserSelection';
+import AboutExercise from '../screens/faq/AboutExerciseScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,7 @@ const RootNavigator = () => {
         <Stack.Screen name="SelectUser" component={UserSelection} options={{title: 'USER SELECTION'}}/>
         <Stack.Screen name="IntroductionToGroundingExercise" component={IntroductionToGroundingExercise} options={{headerShown: false}}/>
         <Stack.Screen name="GroundingExercise" component={GroundingExercise} options={{title: 'Grounding Exercise'}}/>
+        <Stack.Screen name="AboutExercise" component={AboutExercise}  options={{headerShown: false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

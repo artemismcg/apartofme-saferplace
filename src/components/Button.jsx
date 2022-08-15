@@ -1,19 +1,15 @@
 import React from 'react'
 import { View, StyleSheet, Alert, TouchableOpacity } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient';
+import RouteUtils from '../utils/RouteUtils';
 import StyledText from './StyledText.jsx'
 import theme from '../theme.js'
-import routes from '../data/route'
-
-function getRoute(route){
-    return routes.find((r) => r.route === route)
-}
 
 const Button = ({title, navigation, route}) => (
     <View>
         <LinearGradient start={styles.linearGradient.startPos} end={styles.linearGradient.endPos} colors={theme.gradients.purpleGradient} 
         style={title === 'CONTINUE' ? styles.linearGradient : styles.startButton}>
-        <TouchableOpacity onPress={() => navigation.navigate(getRoute(route).route)}>
+        <TouchableOpacity onPress={() => navigation.navigate(RouteUtils.getRoute(route).route)}>
             <StyledText align='center' colorPrimaryDark='primaryDark' font='font' fontSize='heading'>{title}</StyledText>
         </TouchableOpacity>
         </LinearGradient>
@@ -28,22 +24,26 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        marginVertical: 20,
+        marginVertical: 40,
         marginHorizontal: 70,
         paddingTop: 15,
         paddingBottom: 15,
-        bottom: -75
+        paddingLeft: 80,
+        paddingRight: 80,
+        bottom: -45
     },
     startButton: {
         borderRadius: 40,
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        marginVertical: 20,
+        marginVertical: 40,
         marginHorizontal: 70,
         paddingTop: 15,
         paddingBottom: 15,
-        bottom: -35
+        paddingLeft: 80,
+        paddingRight: 80,
+        bottom: -10
     }
 })
 
