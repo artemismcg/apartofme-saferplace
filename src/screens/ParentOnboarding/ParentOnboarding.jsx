@@ -53,7 +53,7 @@ const ParentOnBoardingPage = ({ navigation }) => {
               description={description} 
               buttonTitle={"GET STARTED"} 
               navigation={navigation} 
-              route={'IntroductionToGroundingExercise'}/>
+              route={'SelectUser'}/>
         </View>
     )
 }

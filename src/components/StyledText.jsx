@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
 })
 
 export default function StyledText ({ align, font, colorPrimaryDark, colorPrimaryLight, colorSecondaryDark, colorSecondaryLight,
-     largeTitle, secondaryText, children, color, fontSize, fontWeight, textPadding, welcomeTextParentOnboardingMargin,
+     title, largeTitle, secondaryText, children, color, fontSize, fontWeight, textPadding, welcomeTextParentOnboardingMargin,
      textPaddingParentOnboarding, style, ...restOfProps }) {
     const textStyles = [
       styles.text,
@@ -71,6 +71,7 @@ export default function StyledText ({ align, font, colorPrimaryDark, colorPrimar
       color === 'secondary' && styles.colorSecondary,
       fontSize === 'heading' && styles.heading,
       fontWeight === 'bold' && styles.bold,
+      fontSize === 'title' && styles.title,
       fontSize === 'largeTitle' && styles.largeTitle,
       fontSize === 'secondaryText' && styles.secondaryText,
       textPadding === 'textPadding' && styles.textPadding,
