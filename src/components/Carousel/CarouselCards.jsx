@@ -24,7 +24,7 @@ const CarouselCards = (questions, responses) => {
             useScrollView={true}
         />
         <Pagination
-            containerStyle={{paddingTop: 0}}
+            containerStyle={{paddingBottom: 510}}
             dotsLength={CarouselData.length}
             activeDotIndex={index}
             dotStyle={{
