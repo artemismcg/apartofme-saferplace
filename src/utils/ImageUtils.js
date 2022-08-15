@@ -1,4 +1,4 @@
-import { backgrounds, userSelectedData } from '../data/ImagesData'
+import { backgrounds, userSelectedData, instructionImages } from '../data/ImagesData'
 
 export default imageUtils = {
     getBg: (bgName) =>{
@@ -6,5 +6,8 @@ export default imageUtils = {
     },
     getImageUserSelected: (userName) =>{
         return userSelectedData.find((user) => user.name === userName)
+    },
+    getImageInstruction: (imageName) =>{
+        return instructionImages.find((image) => image.name === imageName)
     }
 }

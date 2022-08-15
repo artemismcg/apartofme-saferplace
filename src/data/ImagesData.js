@@ -9,5 +9,10 @@ const userSelectedData = [
     { image: require('../../assets/ParentOnboarding/Large-Card1-Selected.png'), name: 'grownUpSelected' },
     { image: require('../../assets/ParentOnboarding/Large-Card2-Selected.png'), name: 'childSelected' },
 ]
+const instructionImages = [
+    { image: require('../../assets/instructions/rounded-fern.png'), name:'fern' },
+    { image: require('../../assets/instructions/rounded-aloe.png'), name:'aloe' },
+    { image: require('../../assets/instructions/rounded-mushroom.png'), name:'mushroom' }
+]
 
-export { backgrounds, userSelectedData };
+export { backgrounds, userSelectedData, instructionImages };

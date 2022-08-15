@@ -9,6 +9,7 @@ import ParentOnBoarding from '../screens/ParentOnboarding/ParentOnboarding';
 import OnBoarding from '../screens/ParentOnboarding/OnBoarding';
 import UserSelection from '../screens/ParentOnboarding/UserSelection';
 import AboutExercise from '../screens/faq/AboutExerciseScreen';
+import GroundingInstruction from '../screens/parentGroundingExercises/GroundingInstructionScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +26,7 @@ const RootNavigator = () => {
         <Stack.Screen name="IntroductionToGroundingExercise" component={IntroductionToGroundingExercise} options={{headerShown: false}}/>
         <Stack.Screen name="GroundingExercise" component={GroundingExercise} options={{title: 'Grounding Exercise'}}/>
         <Stack.Screen name="AboutExercise" component={AboutExercise}  options={{headerShown: false}}/>
+        <Stack.Screen name="GroundingInstruction" component={GroundingInstruction}  options={{title: 'Grounding Exercise'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -17,7 +17,7 @@ const GroundingExerciseScreen = ({navigation}) => {
                 description={description} 
                 buttonTitle={"LET'S START"} 
                 navigation={navigation}
-                route={""}
+                route={"GroundingInstruction"}
                 />
                 <TextButton
                 navigation={navigation} 
