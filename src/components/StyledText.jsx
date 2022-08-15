@@ -39,6 +39,9 @@ const styles = StyleSheet.create({
     secondaryText: {
         fontSize: theme.fontSizes.secondaryText
     },
+    tertiaryText: {
+        fontSize: theme.fontSizes.tertiaryText
+    },
     textAlignCenter: {
         textAlign: 'center'
     },
@@ -57,7 +60,7 @@ const styles = StyleSheet.create({
 })
 
 export default function StyledText ({ align, font, colorPrimaryDark, colorPrimaryLight, colorSecondaryDark, colorSecondaryLight,
-     title, largeTitle, secondaryText, children, color, fontSize, fontWeight, textPadding, welcomeTextParentOnboardingMargin,
+     title, largeTitle, secondaryText, tertiaryText, children, color, fontSize, fontWeight, textPadding, welcomeTextParentOnboardingMargin,
      textPaddingParentOnboarding, style, ...restOfProps }) {
     const textStyles = [
       styles.text,
@@ -74,6 +77,7 @@ export default function StyledText ({ align, font, colorPrimaryDark, colorPrimar
       fontSize === 'title' && styles.title,
       fontSize === 'largeTitle' && styles.largeTitle,
       fontSize === 'secondaryText' && styles.secondaryText,
+      fontSize === 'tertiaryText' && styles.tertiaryText,
       textPadding === 'textPadding' && styles.textPadding,
       welcomeTextParentOnboardingMargin === 'welcomeTextParentOnboardingMargin' && styles.welcomeTextParentOnboardingMargin,
       textPaddingParentOnboarding === 'textPaddingParentOnboarding' && styles.textPaddingParentOnboarding,

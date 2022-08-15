@@ -25,8 +25,6 @@ const FaqGallery = ({navigation, title, description, questions, responses}) => {
     )
 } 
 
-/* style this on a theme named styledscreen */
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,

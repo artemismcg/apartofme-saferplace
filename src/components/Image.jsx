@@ -18,6 +18,7 @@ const ImageScreen = ({imageToLoad, backgroundToLoad, title, description, buttonT
                 title={buttonTitle}
                 navigation={navigation}
                 route={route}
+                buttonDisabled={false}
             />:null}
     </View>
 )
@@ -43,12 +44,6 @@ const styles = StyleSheet.create({
         height: 460,
         top: -140,
         marginBottom: -220
-    },
-    saferPlaceLogo: {
-        width: 400,
-        height: 150,
-        resizeMode: 'contain',
-        // top: 100
     }
 })
 

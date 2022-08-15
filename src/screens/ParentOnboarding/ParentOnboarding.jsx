@@ -1,15 +1,13 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { View, StyleSheet, ImageBackground } from "react-native";
+import { View, StyleSheet, Image, ImageBackground } from "react-native";
 import Button from '../../components/Button.jsx';
-import ImageScreen from "../../components/Image.jsx";
 import ImageUtils from '../../utils/ImageUtils';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
+import StyledText from '../../components/StyledText.jsx';
 
-const description = `lorem ipsum dolor sit amet,
-consectetur adipiscing elit, sed
-do eiusmod tempor incididunt
-ut labore et dolore magna`
+const title = `WELCOME
+TO A`
 
 SplashScreen.preventAutoHideAsync();
 
@@ -48,11 +46,8 @@ const ParentOnBoardingPage = ({ navigation }) => {
     return (
         <View style={styles.container} onLayout={onLayoutRootView}>
           <ImageBackground source = {ImageUtils.getBg('calmBackground').src} style={styles.background}>
-            <ImageScreen 
-                  imageToLoad={'SaferPlaceLogo'} 
-                  welcomeText={'WELCOME \n TO A'} 
-                  title={'Snappy Title here'} 
-                  description={description}/>
+            <StyledText fontSize='secondaryText' colorPrimaryDark='primaryDark' align='center' font='font'>{title}</StyledText>
+            <Image source={require('../../../assets/ParentOnboarding/Safer-Place-Logo.png')} style={styles.saferPlaceLogo}/>
             <Button
                 title={'GET STARTED'}
                 navigation={navigation}
@@ -65,15 +60,21 @@ const ParentOnBoardingPage = ({ navigation }) => {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    background: {
-      flex: 1,
-      justifyContent: 'center',
-      resizeMode: 'cover'
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  background: {
+    flex: 1,
+    justifyContent: 'center',
+    resizeMode: 'cover'
+  },
+  saferPlaceLogo: {
+    width: 400,
+    height: 150,
+    resizeMode: 'contain',
+    marginTop: 50  
   }
 })
 
