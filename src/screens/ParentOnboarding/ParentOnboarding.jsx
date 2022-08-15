@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { View, StyleSheet, ImageBackground } from "react-native";
+import Button from '../../components/Button.jsx';
 import ImageScreen from "../../components/Image.jsx";
 import ImageUtils from '../../utils/ImageUtils';
 import * as SplashScreen from 'expo-splash-screen';
@@ -46,16 +47,19 @@ const ParentOnBoardingPage = ({ navigation }) => {
       }
     return (
         <View style={styles.container} onLayout={onLayoutRootView}>
-        <ImageBackground source = {ImageUtils.getBg('calmBackground').src} style={styles.background}>
-          <ImageScreen 
-                imageToLoad={'SaferPlaceLogo'} 
-                welcomeText={'WELCOME \n TO A'} 
-                title={'Snappy Title here'} 
-                description={description} 
-                buttonTitle={"GET STARTED"} 
-                navigation={navigation} 
-                route={'IntroductionToGroundingExercise'}/>
-        </ImageBackground>
+          <ImageBackground source = {ImageUtils.getBg('calmBackground').src} style={styles.background}>
+            <ImageScreen 
+                  imageToLoad={'SaferPlaceLogo'} 
+                  welcomeText={'WELCOME \n TO A'} 
+                  title={'Snappy Title here'} 
+                  description={description}/>
+            <Button
+                title={'GET STARTED'}
+                navigation={navigation}
+                buttonDisabled={false}
+                route={'SelectUser'}
+            />
+          </ImageBackground>
         </View>
     )
 }

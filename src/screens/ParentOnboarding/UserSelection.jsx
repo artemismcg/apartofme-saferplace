@@ -7,13 +7,16 @@ import StyledText from '../../components/StyledText.jsx'
 const GroundingExercisePage = ({navigation}) => {
     const [grownUpSelected, setGrownUpSelected] = useState(<Image style={styles.largeCard1} source={ ImageUtils.getImageUserSelected('grownUp').image}/>)
     const [childSelected, setChildSelected] = useState(<Image style={styles.largeCard2} source={ ImageUtils.getImageUserSelected('child').image}/>)
+    const [btnDisabled, setBtnDisabled] = useState(true)
     function grownUpUser(){
         setGrownUpSelected(<Image style={styles.largeCard1} source={ ImageUtils.getImageUserSelected('grownUpSelected').image}/>)
         setChildSelected(<Image style={styles.largeCard2} source={ ImageUtils.getImageUserSelected('child').image}/>)
+        setBtnDisabled(false)
     }
     function childUser(){
         setGrownUpSelected(<Image style={styles.largeCard1} source={ ImageUtils.getImageUserSelected('grownUp').image}/>)
         setChildSelected(<Image style={styles.largeCard2} source={ ImageUtils.getImageUserSelected('childSelected').image}/>)
+        setBtnDisabled(false)
     }
     return (
         <View style={styles.container}>
@@ -28,7 +31,8 @@ const GroundingExercisePage = ({navigation}) => {
                 <Button
                     title={'CONFIRM'}
                     navigation={navigation}
-                    route={'SelectUser'}
+                    buttonDisabled={btnDisabled}
+                    route={'Home'}
                 />
             </ImageBackground>
         </View>

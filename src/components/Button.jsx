@@ -5,11 +5,16 @@ import RouteUtils from '../utils/RouteUtils';
 import StyledText from './StyledText.jsx'
 import theme from '../theme.js'
 
-const Button = ({title, navigation, route}) => (
+const Button = ({title, buttonDisabled, navigation, route}) => (
     <View>
-        <LinearGradient start={styles.linearGradient.startPos} end={styles.linearGradient.endPos} colors={theme.gradients.purpleGradient} 
-        style={title === 'CONTINUE' ? styles.linearGradient : styles.startButton}>
-        <TouchableOpacity onPress={() => navigation.navigate(RouteUtils.getRoute(route).route)}>
+        <LinearGradient
+            start={styles.linearGradient.startPos}
+            end={styles.linearGradient.endPos}
+            colors={ buttonDisabled === false ?
+                theme.gradients.purpleGradient:
+                theme.gradients.greyGradient}
+            style={title === 'CONTINUE' ? styles.linearGradient : styles.startButton}>
+        <TouchableOpacity disabled={buttonDisabled === undefined || false ? false: buttonDisabled } onPress={() => navigation.navigate(RouteUtils.getRoute(route).route)}>
             <StyledText align='center' colorPrimaryDark='primaryDark' font='font' fontSize='heading'>{title}</StyledText>
         </TouchableOpacity>
         </LinearGradient>
