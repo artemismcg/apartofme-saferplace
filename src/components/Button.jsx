@@ -23,6 +23,8 @@ const Button = ({title, buttonDisabled, navigation, route}) => (
 
 const styles = StyleSheet.create({
     linearGradient: {
+        width: 270,
+        height: 65,
         startPos: [0.35, 0],
         endPos: [0, 0],
         borderRadius: 40,
@@ -31,23 +33,25 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginVertical: 40,
         marginHorizontal: 70,
-        paddingTop: 15,
-        paddingBottom: 15,
-        paddingLeft: 80,
-        paddingRight: 80,
+        paddingTop: 20,
+        paddingBottom: 20,
+        paddingLeft: 60,
+        paddingRight: 60,
         bottom: -45
     },
     startButton: {
+        width: 270,
+        height: 65,
         borderRadius: 40,
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         marginVertical: 40,
         marginHorizontal: 70,
-        paddingTop: 15,
-        paddingBottom: 15,
-        paddingLeft: 80,
-        paddingRight: 80,
+        paddingTop: 20,
+        paddingBottom: 20,
+        paddingLeft: 60,
+        paddingRight: 60,
         bottom: -10
     }
 })
