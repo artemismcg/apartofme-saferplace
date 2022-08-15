@@ -49,7 +49,7 @@ const SwiperOnBoardingItem = ({ item, index, route, navigation}) => {
         justifyContent: 'space-between',
         alignItems: 'center',
         // width: '100%',
-        paddingHorizontal: 20,
+        marginHorizontal: -20,
         // paddingVertical: -10,
         marginTop: 20
     },

@@ -13,6 +13,7 @@ const SwiperOnBoarding = ({navigation, route}) => {
                 paginationStyle= {styles.pagination}
                 activeDotColor={ theme.colors.secondaryLightPink}
                 dotColor={theme.colors.backgroundDarkBrilliantWhite}
+                activeDotStyle={styles.activeDot}
                 >
                 {SwiperOnBoardingData.map((item, index) => {
                     return (
@@ -32,6 +33,10 @@ const styles = StyleSheet.create({
     },
     pagination: {
         bottom: 150,
+    },
+    activeDot: {
+        width: 32,
+        height: 8
     }
 })
 
