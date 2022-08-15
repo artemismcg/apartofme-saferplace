@@ -4,7 +4,7 @@ import ImageUtils from '../../utils/ImageUtils'
 import Button from '../../components/Button.jsx'
 import StyledText from '../../components/StyledText.jsx'
 
-const GroundingExercisePage = ({navigation}) => {
+const UserSelection = ({navigation}) => {
     const [grownUpSelected, setGrownUpSelected] = useState(<Image style={styles.largeCard1} source={ ImageUtils.getImageUserSelected('grownUp').image}/>)
     const [childSelected, setChildSelected] = useState(<Image style={styles.largeCard2} source={ ImageUtils.getImageUserSelected('child').image}/>)
     const [btnDisabled, setBtnDisabled] = useState(true)
@@ -32,13 +32,13 @@ const GroundingExercisePage = ({navigation}) => {
                     title={'CONFIRM'}
                     navigation={navigation}
                     buttonDisabled={btnDisabled}
-                    route={'Home'}
+                    route={'OnBoarding'}
                 />
             </ImageBackground>
         </View>
     )
 }
-export default GroundingExercisePage;
+export default UserSelection;
 
 const styles = StyleSheet.create({
     container: {
