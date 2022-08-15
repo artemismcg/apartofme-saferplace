@@ -1,6 +1,7 @@
 const backgrounds = [
-    {bg: 'calmBackground', src:(require('../../assets/ParentOnboarding/calm-background.png'))},
-    {bg: 'gardenBg1', src:(require('../../assets/Garden_bg1.png'))}
+    { bg: 'calmBackground', src:(require('../../assets/ParentOnboarding/calm-background.png')) },
+    { bg: 'gardenBg1', src:(require('../../assets/Garden_bg1.png')) },
+    { bg: 'aboutGroundingBackground', src:(require('../../assets/AboutGroundingBackground.png')) }
 ]
 const userSelectedData = [
     { image: require('../../assets/ParentOnboarding/Large-Card1.png'), name: 'grownUp' },

@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, ImageBackground } from "react-native";
 import ImageScreen from "../../components/Image.jsx";
+import ImageUtils from '../../utils/ImageUtils';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
 
@@ -45,15 +46,16 @@ const ParentOnBoardingPage = ({ navigation }) => {
       }
     return (
         <View style={styles.container} onLayout={onLayoutRootView}>
-            <ImageScreen 
-              imageToLoad={'SaferPlaceLogo'} 
-              backgroundToLoad={'calmBackground'} 
-              welcomeText={'WELCOME \n TO A'} 
-              title={'Snappy Title here'} 
-              description={description} 
-              buttonTitle={"GET STARTED"} 
-              navigation={navigation} 
-              route={'SelectUser'}/>
+        <ImageBackground source = {ImageUtils.getBg('calmBackground').src} style={styles.background}>
+          <ImageScreen 
+                imageToLoad={'SaferPlaceLogo'} 
+                welcomeText={'WELCOME \n TO A'} 
+                title={'Snappy Title here'} 
+                description={description} 
+                buttonTitle={"GET STARTED"} 
+                navigation={navigation} 
+                route={'IntroductionToGroundingExercise'}/>
+        </ImageBackground>
         </View>
     )
 }
@@ -63,7 +65,12 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-    }
+    },
+    background: {
+      flex: 1,
+      justifyContent: 'center',
+      resizeMode: 'cover'
+  }
 })
 
 export default ParentOnBoardingPage;
