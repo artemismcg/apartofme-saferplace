@@ -14,7 +14,7 @@ const GroundingInstructionScreen = ({navigation}) => {
                <Button
                 title={"I'M READY!"}
                 navigation={navigation}
-                route={'GroundingStepOne'}
+                route={'GroundingStep'}
                 buttonDisabled={false}
                />
             </ImageBackground>

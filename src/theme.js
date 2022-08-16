@@ -3,9 +3,11 @@ const theme = {
     colors: {
         primaryPurple: '#712ca4',
         primaryGreen: '#036364',
+        primaryGreenOpacity: 'rgba(3, 99, 100, 0.5)',
         primaryOrange: '#d97746',
         secondaryLightPurple: '#aa82e0',
         secondaryLightGreen: '#00dbc0',
+        secondaryLightGreenOpacity: 'rgba(0, 219, 192, 0.5)',
         secondaryLightOrange: '#ffb743',
         secondaryLightPink: '#e6a0ef',
         secondaryDarkPurple: '#341c41',
