@@ -23,7 +23,8 @@ const theme = {
     },
     gradients: {
         purpleGradient: ['#712CA4', '#BC35CB'],
-        greyGradient: ['#5D5D5D', '#CECECE']
+        greyGradient: ['#5D5D5D', '#CECECE'],
+        purpleLightGradient: ['rgba(170, 130, 224, 0.4)', 'rgba(170, 130, 224, 0.2)']
     },
     fonts: {
         main: 'Poppins-Regular'

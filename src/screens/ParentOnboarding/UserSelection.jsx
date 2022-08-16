@@ -1,7 +1,7 @@
 import React, {  useState } from 'react';
 import { View, Image, StyleSheet, ImageBackground, TouchableWithoutFeedback } from 'react-native';
 import ImageUtils from '../../utils/ImageUtils'
-import Button from '../../components/Button.jsx'
+import Button from '../../components/CustomButton.jsx'
 import StyledText from '../../components/StyledText.jsx'
 
 const UserSelection = ({navigation}) => {

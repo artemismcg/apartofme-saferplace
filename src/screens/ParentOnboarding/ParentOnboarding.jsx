@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { View, StyleSheet, Image, ImageBackground } from "react-native";
-import Button from '../../components/Button.jsx';
+import Button from '../../components/CustomButton.jsx';
 import ImageUtils from '../../utils/ImageUtils';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
@@ -52,7 +52,7 @@ const ParentOnBoardingPage = ({ navigation }) => {
                 title={'GET STARTED'}
                 navigation={navigation}
                 buttonDisabled={false}
-                route={'SelectUser'}
+                route={'IntroductionToGroundingExercise'}
             />
           </ImageBackground>
         </View>

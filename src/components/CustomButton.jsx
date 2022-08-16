@@ -37,7 +37,8 @@ const styles = StyleSheet.create({
         paddingBottom: 20,
         paddingLeft: 60,
         paddingRight: 60,
-        bottom: -45
+        bottom: -45,
+        zIndex: 1000
     },
     startButton: {
         width: 270,

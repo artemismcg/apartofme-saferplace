@@ -5,7 +5,8 @@ const routes = [
     { route: 'OnBoarding', path: '../screens/ParentOnboarding/Onboarding' },
     { route:'IntroductionToGroundingExercise', path:'../screens/ParentOnboarding/IntroductionExercises' },
     { route:'AboutExercise', path:'../screens/faq/AboutExerciseScreen' },
-    { route:'GroundingInstruction', path:'../screens/parentGroundingExercises/GroundingInstructionScreen' }
+    { route:'GroundingInstruction', path:'../screens/parentGroundingExercises/GroundingInstructionScreen' },
+    { route:'GroundingStepOne', path:'../screens/parentGroundingExercises/GroundingStepOneScreen' }
 ]
 
 export default routes

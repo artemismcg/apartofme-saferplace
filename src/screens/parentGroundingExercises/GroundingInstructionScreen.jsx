@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet, ImageBackground} from 'react-native';
 import InstructionList from '../../components/Instruction/InstructionList';
 import StyledText from '../../components/StyledText.jsx';
-import Button from '../../components/Button.jsx';
+import Button from '../../components/CustomButton.jsx';
 import ImageUtils from '../../utils/ImageUtils';
 
 const GroundingInstructionScreen = ({navigation}) => {
@@ -14,7 +14,7 @@ const GroundingInstructionScreen = ({navigation}) => {
                <Button
                 title={"I'M READY!"}
                 navigation={navigation}
-                route={''}
+                route={'GroundingStepOne'}
                 buttonDisabled={false}
                />
             </ImageBackground>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, ImageBackground} from 'react-native';
-import ImageScreen from '../../components/Image.jsx';
+import ImageScreen from '../../components/CustomImage.jsx';
 import TextButton from '../../components/TextButton.jsx';
 import ImageUtils from '../../utils/ImageUtils';
 

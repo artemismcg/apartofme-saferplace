@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image, View, StyleSheet, ImageBackground, Alert } from 'react-native'
 import StyledText from './StyledText.jsx'
-import Button from './Button.jsx'
+import Button from './CustomButton.jsx'
 
 const ImageScreen = ({imageToLoad, backgroundToLoad, title, description, buttonTitle, navigation, welcomeText, route}) => (
     <View style={styles.container}>

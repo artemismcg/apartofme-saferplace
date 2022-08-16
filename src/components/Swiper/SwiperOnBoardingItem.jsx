@@ -2,7 +2,7 @@ import React from 'react'
 import { View, StyleSheet, Image, ImageBackground } from "react-native"
 import ImageUtils from '../../utils/ImageUtils'
 import StyledText from '../../components/StyledText'
-import Button from '../../components/Button'
+import Button from '../CustomButton'
 
 const SwiperOnBoardingItem = ({ item, index, route, navigation}) => {
     return (
