@@ -4,7 +4,7 @@ import StyledText from '../../components/StyledText';
 import RadioButton from '../../components/RadioButton';
 import Button from '../../components/CustomButton';
 import ImageUtils from '../../utils/ImageUtils';
-import { twoOptions } from '../../data/RadioButtonData'
+import { twoOptions } from '../../data/RadioButtonData';
 
 const description = `Did you notice the sensations in your feet where they connected with the ground?`
 
@@ -24,10 +24,10 @@ const GroundingInstructionScreen = ({navigation}) => {
                 <Button style={styles.button}
                 title={"CONTINUE"}
                 navigation={navigation}
-                route={''}
+                route={'GroundingTextInput'}
                 buttonDisabled={btnDisabled}
                 />
-               <Image source={require('../../../assets/dialogs/fern.png')} style={styles.image}/>
+               <Image source={require('../../../assets/groundingExercises/fern.png')}  style={styles.image}/>
             </ImageBackground>
         </View>
     )

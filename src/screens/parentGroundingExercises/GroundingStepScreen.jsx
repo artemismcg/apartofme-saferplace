@@ -17,7 +17,7 @@ const GroundingInstructionScreen = ({navigation}) => {
                 route={'GroundingButtonInput'}
                 buttonDisabled={false}
                />
-               <Image source={require('../../../assets/dialogs/guide.png')} style={styles.image}/>
+               <Image source={require('../../../assets/groundingExercises/guide.png')} style={styles.image}/>
             </ImageBackground>
         </View>
     )

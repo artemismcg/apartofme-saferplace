@@ -8,7 +8,8 @@ const routes = [
     { route:'AboutExercise', path:'../screens/faq/AboutExerciseScreen' },
     { route:'GroundingInstruction', path:'../screens/parentGroundingExercises/GroundingInstructionScreen' },
     { route:'GroundingStep', path:'../screens/parentGroundingExercises/GroundingStepScreen' },
-    { route:'GroundingButtonInput', path:'../screens/parentGroundingExercises/GroundingButtonInputScreen' }
+    { route:'GroundingButtonInput', path:'../screens/parentGroundingExercises/GroundingButtonInputScreen' },
+    { route:'GroundingTextInput', path:'../screens/parentGroundingExercises/GroundingTextInputScreen' }
 ]
 
 export default routes
