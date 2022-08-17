@@ -1,11 +1,11 @@
 import React from 'react'
-import { View, Text, StyleSheet} from "react-native"
-import SwiperOnBoardingData from '../../data/SwiperOnboardingData'
+import { View, StyleSheet} from "react-native"
 import SwiperOnBoardingItem from './SwiperOnBoardingItem'
 import Swiper from 'react-native-swiper'
 import theme from '../../theme'
 
-const SwiperOnBoarding = ({navigation, route}) => {
+
+const SwiperOnBoarding = ({navigation, route, swiperData}) => {
     return (
         <View style={styles.container}>
             <Swiper
@@ -15,7 +15,7 @@ const SwiperOnBoarding = ({navigation, route}) => {
                 dotColor={theme.colors.backgroundDarkBrilliantWhite}
                 activeDotStyle={styles.activeDot}
                 >
-                {SwiperOnBoardingData.map((item, index) => {
+                {swiperData.map((item, index) => {
                     return (
                         <SwiperOnBoardingItem item={item} index={index} key={index} route={route} navigation= {navigation}>
                         </SwiperOnBoardingItem>

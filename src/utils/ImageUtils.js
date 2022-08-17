@@ -1,4 +1,4 @@
-import { backgrounds, userSelectedData, instructionImages } from '../data/ImagesData'
+import { backgrounds, userSelectedData, instructionImages, onBoardingImages  } from '../data/ImagesData'
 
 export default imageUtils = {
     getBg: (bgName) =>{
@@ -9,5 +9,8 @@ export default imageUtils = {
     },
     getImageInstruction: (imageName) =>{
         return instructionImages.find((image) => image.name === imageName)
-    }
+    },
+    getSwiperOnboarding: (imageName) =>{
+        return onBoardingImages.find((image) => image.name === imageName)
+    },
 }

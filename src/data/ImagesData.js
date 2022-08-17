@@ -14,5 +14,10 @@ const instructionImages = [
     { image: require('../../assets/instructions/rounded-aloe.png'), name:'aloe' },
     { image: require('../../assets/instructions/rounded-mushroom.png'), name:'mushroom' }
 ]
+const onBoardingImages = [
+    { image: require("../../assets/mermaid.png"), name: "mermaid" },
+    { image: require("../../assets/bird.png"), name: "bird" },
+    { image: require("../../assets/Tree.png"), name: "tree" },
+]
 
-export { backgrounds, userSelectedData, instructionImages };
+export { backgrounds, userSelectedData, instructionImages, onBoardingImages };
