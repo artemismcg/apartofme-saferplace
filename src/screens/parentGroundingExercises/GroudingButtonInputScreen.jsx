@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {View, StyleSheet, Image, ImageBackground} from 'react-native';
 import StyledText from '../../components/StyledText';
 import RadioButton from '../../components/RadioButton';
@@ -9,17 +9,23 @@ import { twoOptions } from '../../data/RadioButtonData'
 const description = `Did you notice the sensations in your feet where they connected with the ground?`
 
 const GroundingInstructionScreen = ({navigation}) => {
+    const [sensationData, setSensationdData] = useState("");
+    const [btnDisabled, setBtnDisabled] = useState(true)
+    const sensationNoticeSelected = (item) => {
+        setSensationdData(item.label)
+        setBtnDisabled(false)
+    } 
     return (
         <View style={styles.container}>
             <ImageBackground source = {ImageUtils.getBg('gardenBg1').src} style={styles.background}>
                 <StyledText fontSize='title' colorPrimaryDark='primaryDark' font='font' align='left' style={styles.title}>{description}</StyledText>
                 <RadioButton style={styles.radioButton}
-                data={twoOptions}/>
+                data={twoOptions} onSelectItem={sensationNoticeSelected}/>
                 <Button style={styles.button}
                 title={"CONTINUE"}
                 navigation={navigation}
                 route={''}
-                buttonDisabled={true}
+                buttonDisabled={btnDisabled}
                 />
                <Image source={require('../../../assets/dialogs/fern.png')} style={styles.image}/>
             </ImageBackground>
