@@ -7,11 +7,12 @@ import IntroductionToGroundingExercise from '../screens/ParentOnboarding/Introdu
 import GroundingExercise from '../screens/parentGroundingExercises/GroundingExerciseScreen';
 import ParentOnBoarding from '../screens/ParentOnboarding/ParentOnboarding';
 import OnBoarding from '../screens/ParentOnboarding/OnBoarding';
+import LanguageSelection from '../screens/ParentOnboarding/LanguageSelection';
 import UserSelection from '../screens/ParentOnboarding/UserSelection';
 import AboutExercise from '../screens/faq/AboutExerciseScreen';
 import GroundingInstruction from '../screens/parentGroundingExercises/GroundingInstructionScreen';
 import GroundingStep from '../screens/parentGroundingExercises/GroundingStepScreen';
-import GroundingButtonInput from '../screens/parentGroundingExercises/GroudingButtonInputScreen'
+import GroundingButtonInput from '../screens/parentGroundingExercises/GroudingButtonInputScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +24,7 @@ const RootNavigator = () => {
         headerTitleStyle:{fontFamily: theme.fonts.main, fontSize: theme.fontSizes.secondaryText, color: theme.colors.backgroundDarkBrilliantWhite},
         headerTintColor: theme.colors.backgroundDarkBrilliantWhite}}>
         <Stack.Screen name="Home" component={ParentOnBoarding} options={{headerShown: false}}/>
+        <Stack.Screen name="LanguageSelection" component={LanguageSelection} options={{title: 'LANGUAGE SELECTION'}}/>
         <Stack.Screen name="SelectUser" component={UserSelection} options={{title: 'USER SELECTION'}}/>
         <Stack.Screen name="OnBoarding" component={OnBoarding} options={{headerShown: false}}/>
         <Stack.Screen name="IntroductionToGroundingExercise" component={IntroductionToGroundingExercise} options={{headerShown: false}}/>
