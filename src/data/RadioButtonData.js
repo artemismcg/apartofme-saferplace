@@ -1,4 +1,4 @@
-const TwoOptions = [
+const twoOptions = [
     {
       label: 'Yes'
      },
@@ -6,5 +6,16 @@ const TwoOptions = [
       label: 'No'
      }
 ];
+const languages = [
+  {
+    label: 'English'
+   },
+   {
+    label: 'Ukrainian'
+   },
+   {
+    label: 'Russian'
+   }
+];
 
-export default TwoOptions
+export { twoOptions, languages } 

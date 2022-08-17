@@ -4,7 +4,7 @@ import StyledText from '../../components/StyledText';
 import RadioButton from '../../components/RadioButton';
 import Button from '../../components/CustomButton';
 import ImageUtils from '../../utils/ImageUtils';
-import TwoOptions from '../../data/RadioButtonData'
+import { twoOptions } from '../../data/RadioButtonData'
 
 const description = `Did you notice the sensations in your feet where they connected with the ground?`
 
@@ -14,7 +14,7 @@ const GroundingInstructionScreen = ({navigation}) => {
             <ImageBackground source = {ImageUtils.getBg('gardenBg1').src} style={styles.background}>
                 <StyledText fontSize='title' colorPrimaryDark='primaryDark' font='font' align='left' style={styles.title}>{description}</StyledText>
                 <RadioButton style={styles.radioButton}
-                data={TwoOptions}/>
+                data={twoOptions}/>
                 <Button style={styles.button}
                 title={"CONTINUE"}
                 navigation={navigation}
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     title: {
         paddingHorizontal: 50,
         marginTop: 120,
-        marginBottom: -270
+        marginBottom: -200
     }
 })
 

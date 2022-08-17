@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
         alignItems: 'center',
-        paddingTop: 60,
+        paddingTop: 80,
         marginBottom: -25
     },
     textArea: {
