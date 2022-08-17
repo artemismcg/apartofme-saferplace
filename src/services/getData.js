@@ -1,5 +1,5 @@
 import initializeFirebase from '../firebase/initialize';
-import { getDatabase, ref, get, onValue  } from 'firebase/database';
+import { getDatabase, ref, get  } from 'firebase/database';
 
 initializeFirebase
 export default getDataFromFirebase = {
@@ -7,7 +7,6 @@ export default getDataFromFirebase = {
         const db = getDatabase();
         const swiperOnboardingDb = db;
         const swiperOnboardinData = [];
-        // const reference = ref(swiperOnboardingDb, 'parentOnboarding');
         await get(ref(swiperOnboardingDb,'parentOnboarding/')).then(snapshot => {
             snapshot.forEach(childSnapshot => {
                 const childData = childSnapshot.val();
@@ -15,5 +14,17 @@ export default getDataFromFirebase = {
             });
         })
         return swiperOnboardinData
+    },
+    getLanguagesData: async() =>{
+        const db = getDatabase();
+        const languagesDb = db;
+        const languagesData = [];
+        await get(ref(languagesDb,'language/')).then(snapshot => {
+            snapshot.forEach(childSnapshot => {
+                const childData = childSnapshot.val();
+                languagesData.push(childData);
+            });
+        })
+        return languagesData
     },
 }

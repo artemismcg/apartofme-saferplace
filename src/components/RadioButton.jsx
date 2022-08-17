@@ -1,9 +1,9 @@
-import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import React, { useState } from 'react';
+import {StyleSheet} from 'react-native';
 import RadioButtonRN from 'radio-buttons-react-native';
 import theme from '../theme';
 
-const RadioButton = ({data}) => {
+const RadioButton = ({data, onSelectItem}) => {
     return (
         <RadioButtonRN 
         data={data}
@@ -19,6 +19,7 @@ const RadioButton = ({data}) => {
         boxDeactiveBgColor={theme.colors.primaryGreenOpacity}
         textColor={theme.colors.backgroundDarkBrilliantWhite}
         duration={300}
+        selectedBtn={(e) => onSelectItem(e)}
         />
     )
 }
