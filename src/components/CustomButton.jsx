@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     linearGradient: {
         width: 270,
         height: 65,
-        startPos: [0.35, 0],
+        startPos: [1, 0],
         endPos: [0, 0],
         borderRadius: 40,
         flexDirection: 'row',
@@ -33,11 +33,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginVertical: 40,
         marginHorizontal: 70,
+        marginTop: 100,
         paddingTop: 20,
         paddingBottom: 20,
         paddingLeft: 60,
         paddingRight: 60,
-        bottom: -45,
         zIndex: 1000
     },
     startButton: {

@@ -14,7 +14,7 @@ const GroundingInstructionScreen = ({navigation}) => {
                <Button style={styles.button}
                 title={"CONTINUE"}
                 navigation={navigation}
-                route={''}
+                route={'GroundingButtonInput'}
                 buttonDisabled={false}
                />
                <Image source={require('../../../assets/dialogs/guide.png')} style={styles.image}/>
