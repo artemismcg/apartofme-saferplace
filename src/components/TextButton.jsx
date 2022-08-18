@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: -110
+        marginTop: -120
     },
     buttonBack: {
         flexDirection: 'row',

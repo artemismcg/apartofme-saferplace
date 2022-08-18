@@ -15,18 +15,23 @@ const SwiperOnBoardingItem = ({ item, index, route, navigation}) => {
                     colorPrimaryDark='primaryDark'
                     align='center'
                     font='font'
-                    textPadding='textPadding'>
-                        {item.title}
+                    textPadding='textPaddingHorizontal'
+                    style={styles.title}
+                >
+                {item.title}
                 </StyledText>
                 <StyledText
                     fontSize='secondaryText'
                     colorSecondaryDark='secondaryDark'
-                    align='center' font='font'
-                    textPadding='textPadding'>
+                    align='center' 
+                    font='font'
+                    textPadding='textPadding'
+                    style={styles.body}
+                >
                     {item.description}
                 </StyledText>
             </View>
-            <View style={styles.buttonContainer}>
+            <View>
                 <Button
                     title={'NEXT'}
                     buttonDisabled={false}
@@ -44,15 +49,6 @@ const SwiperOnBoardingItem = ({ item, index, route, navigation}) => {
         justifyContent: 'center',
         alignItems: 'center'
     },
-    buttonContainer: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        // width: '100%',
-        marginHorizontal: -20,
-        // paddingVertical: -10,
-        marginTop: 20
-    },
     background: {
         flex: 1,
         justifyContent: 'center',
@@ -60,10 +56,17 @@ const SwiperOnBoardingItem = ({ item, index, route, navigation}) => {
         width: '100%',
     },
     image: {
-        width: 248,
-        // height: 310,
+        width: 240,
         alignSelf: 'center',
-        marginTop: 100,
+        justifyContent: 'space-between'
+    },
+    title: {
+        paddingTop: 30,
+        paddingBottom: 10
+    },
+    body: {
+        paddingHorizontal: 50,
+        paddingBottom: 30
     }
   })
   

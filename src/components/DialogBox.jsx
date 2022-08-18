@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import TypeWriter from 'react-native-typewriter';
 import StyledText from './StyledText.jsx';
 import theme from '../theme.js';
 
@@ -12,7 +13,7 @@ const DialogBox = ({body}) => {
             end={styles.textArea.endPos} 
             colors={theme.gradients.purpleLightGradient} 
             style={styles.textArea}>
-                <StyledText fontSize='heading' colorPrimaryDark='primaryDark' align='center' font='font' style={styles.text}>{body}</StyledText>
+            <StyledText fontSize='heading' colorPrimaryDark='primaryDark' align='center' font='font' style={styles.text}>{body}</StyledText>
             </LinearGradient>
         </View>
     )

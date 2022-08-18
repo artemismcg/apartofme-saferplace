@@ -46,13 +46,13 @@ const ParentOnBoardingPage = ({ navigation }) => {
     return (
         <View style={styles.container} onLayout={onLayoutRootView}>
           <ImageBackground source = {ImageUtils.getBg('calmBackground').src} style={styles.background}>
-            <StyledText fontSize='secondaryText' colorPrimaryDark='primaryDark' align='center' font='font'>{title}</StyledText>
+            <StyledText fontSize='secondaryText' colorPrimaryDark='primaryDark' align='center' font='font' style={styles.text}>{title}</StyledText>
             <Image source={require('../../../assets/ParentOnboarding/Safer-Place-Logo.png')} style={styles.saferPlaceLogo}/>
             <Button
                 title={'GET STARTED'}
                 navigation={navigation}
                 buttonDisabled={false}
-                route={'IntroductionToGroundingExercise'}
+                route={'LanguageSelection'}
             />
           </ImageBackground>
         </View>
@@ -70,11 +70,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     resizeMode: 'cover'
   },
+  text: {
+    paddingTop: 200
+  },
   saferPlaceLogo: {
     width: 400,
     height: 150,
     resizeMode: 'contain',
-    marginTop: 50  
+    marginTop: 50,
+    marginBottom: 150
   }
 })
 

@@ -57,6 +57,9 @@ const styles = StyleSheet.create({
     textPaddingParentOnboarding: {
         paddingTop:100,
     },
+    textPaddingHorizontal: {
+        paddingHorizontal: 40
+    }
 })
 
 export default function StyledText ({ align, font, colorPrimaryDark, colorPrimaryLight, colorSecondaryDark, colorSecondaryLight,
@@ -79,6 +82,7 @@ export default function StyledText ({ align, font, colorPrimaryDark, colorPrimar
       fontSize === 'secondaryText' && styles.secondaryText,
       fontSize === 'tertiaryText' && styles.tertiaryText,
       textPadding === 'textPadding' && styles.textPadding,
+      textPadding === 'textPaddingHorizontal' && styles.textPaddingHorizontal,
       welcomeTextParentOnboardingMargin === 'welcomeTextParentOnboardingMargin' && styles.welcomeTextParentOnboardingMargin,
       textPaddingParentOnboarding === 'textPaddingParentOnboarding' && styles.textPaddingParentOnboarding,
       style

@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         borderRadius: 16,
         borderColor: theme.colors.secondaryLightGreenOpacity,
         backgroundColor: theme.colors.primaryGreenOpacity,
-
+        marginBottom: 110
     },
     shadow: {
         shadowColor: 'rgba(26, 26, 26, 0.15)',

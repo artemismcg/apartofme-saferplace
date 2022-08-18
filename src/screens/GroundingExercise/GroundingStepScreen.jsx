@@ -3,14 +3,13 @@ import {View, StyleSheet, Image, ImageBackground} from 'react-native';
 import DialogBox from '../../components/DialogBox';
 import Button from '../../components/CustomButton';
 import ImageUtils from '../../utils/ImageUtils';
-
-const description = `Close your eyes for 10 seconds and notice what sensations you can feel where your feet connect with the ground`
+import InstructionUtils from '../../utils/InstructionUtils';
 
 const GroundingInstructionScreen = ({navigation}) => {
     return (
         <View style={styles.container}>
             <ImageBackground source = {ImageUtils.getBg('gardenBg1').src} style={styles.background}>
-               <DialogBox body={description}/>
+               <DialogBox body={InstructionUtils.getStep('Grounding', 1).body}/>
                <Button style={styles.button}
                 title={"CONTINUE"}
                 navigation={navigation}

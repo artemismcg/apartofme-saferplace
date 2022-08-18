@@ -10,6 +10,8 @@ const SwiperOnBoarding = ({navigation, route, swiperData}) => {
         <View style={styles.container}>
             <Swiper
                 style={styles.element}
+                showsButtons={false}
+                loop={true}
                 paginationStyle= {styles.pagination}
                 activeDotColor={ theme.colors.secondaryLightPink}
                 dotColor={theme.colors.backgroundDarkBrilliantWhite}
@@ -32,7 +34,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     pagination: {
-        bottom: 150,
+        marginBottom: 130
     },
     activeDot: {
         width: 32,

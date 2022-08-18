@@ -19,7 +19,7 @@ const GroundingInstructionScreen = ({navigation}) => {
                 <Button style={styles.button}
                 title={"CONTINUE"}
                 navigation={navigation}
-                route={''}
+                route={'GroundingEnd'}
                 buttonDisabled={false}
                 />
             <Image source={require('../../../assets/groundingExercises/mushroom.png')}  style={styles.image}/>
@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
     },  
     title: {
         paddingHorizontal: 50,
+        paddingTop: 100,
         paddingBottom: 50,
         marginBottom: -30
     }

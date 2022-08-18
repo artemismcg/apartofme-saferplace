@@ -3,9 +3,7 @@ import {View, StyleSheet, ImageBackground} from 'react-native';
 import ImageScreen from '../../components/CustomImage.jsx';
 import ImageUtils from '../../utils/ImageUtils';
 
-const description = `A simple introduction to how 
-exercises will work, and an 
-invitation to try one themselves.`
+const description = `A simple introduction to how exercises will work, and an invitation to try one themselves.`
 
 const IntroductionExercises = ({navigation}) => {
     return (
