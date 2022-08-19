@@ -5,15 +5,15 @@ import Button from '../../components/CustomButton';
 import ImageUtils from '../../utils/ImageUtils';
 import InstructionUtils from '../../utils/InstructionUtils';
 
-const GroundingStep = ({navigation}) => {
+const GroundingStepFour = ({navigation}) => {
     return (
         <View style={styles.container}>
             <ImageBackground source = {ImageUtils.getBg('gardenBg1').src} style={styles.background}>
-               <DialogBox body={InstructionUtils.getStep('Grounding', 1).body}/>
+               <DialogBox body={InstructionUtils.getStep('Grounding', 5).body}/>
                <Button style={styles.button}
                 title={"CONTINUE"}
                 navigation={navigation}
-                route={'GroundingButtonInput'}
+                route={'GroundingStepFive'}
                 buttonDisabled={false}
                />
                <Image source={require('../../../assets/groundingExercises/guide.png')} style={styles.image}/>
@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default GroundingStep;
+export default GroundingStepFour;

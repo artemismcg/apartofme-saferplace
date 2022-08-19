@@ -6,7 +6,7 @@ import CustomTextInput from '../../components/CustomTextInput';
 import Button from '../../components/CustomButton';
 import ImageUtils from '../../utils/ImageUtils';
 
-const description = `What part of your feet feel most connected to the earth?`
+const description = `What does it feel like to have deep roots connecting you to the centre of the earth?`
 
 const GroundingInstructionScreen = ({navigation}) => {
     const headerHeight = useHeaderHeight();
@@ -19,10 +19,10 @@ const GroundingInstructionScreen = ({navigation}) => {
                 <Button style={styles.button}
                 title={"CONTINUE"}
                 navigation={navigation}
-                route={'GroundingStepOne'}
+                route={'GroundingStepFour'}
                 buttonDisabled={false}
                 />
-            <Image source={require('../../../assets/groundingExercises/mushroom.png')}  style={styles.image}/>
+            <Image source={require('../../../assets/groundingExercises/aloe.png')}  style={styles.image}/>
             </ImageBackground>
         </View>
     )
@@ -41,10 +41,10 @@ const styles = StyleSheet.create({
     },
     image: {
         position: 'absolute',
-        width: 350,
+        width: 270,
         height: 350,
         zIndex: 2,
-        bottom: -10,
+        bottom: 0,
         left: 20
     },  
     title: {

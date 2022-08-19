@@ -49,7 +49,6 @@ const styles = StyleSheet.create({
         width: 230,
         height: 430,
         zIndex: 2,
-        elevation: 2,
         bottom: -10,
         left: 30
     },  
